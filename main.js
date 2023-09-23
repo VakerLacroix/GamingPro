@@ -174,7 +174,7 @@ function agregarAlCarrito(producto) {
 
 function finalizarCompra() {
     const opciones = ["1)Seguir comprando","2)Finalizar compra"];
-    const seleccion = prompt("¿Qué deseas hacer? Ingresa el numero correspondiente a tu opcion?\n" + opciones.join('\n'));
+    const seleccion = prompt("Ingresa el numero correspondiente segun la opcion que desees\n" + opciones.join('\n'));
 
     if (seleccion) {
     } if (seleccion === "1" ){
@@ -183,7 +183,7 @@ function finalizarCompra() {
         mostrarCarrito();  
 
     } else {
-        console.log("Selección no válida. Por favor ingresa el numero correspondiente segun tu opcion");
+        console.log("Selección no válida. Por favor ingresa el numero correspondiente segun la opcion que desees");
         finalizarCompra()
     }
 }
